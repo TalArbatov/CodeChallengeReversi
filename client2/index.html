@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reversi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <div id="page-inner-wrapper">
+        <div id="canvas-wrapper">
+          <canvas height="600" width="600" id="myCanvas"></canvas>
+        </div>
+        <div id="ui-wrapper">
+          <button onclick="undo()">Undo</button>
+          <p id="text-current-player">Current player: black</p>
+          <p id="text-black-score">Black score: 2</p>
+          <p id="text-white-score">White score: 2</p>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./reversi.js"></script>
+  </body>
+</html>
