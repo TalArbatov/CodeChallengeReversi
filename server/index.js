@@ -7,7 +7,7 @@ const app = express();
 const http = require("http").createServer(app);
 const io = require("socket.io")(http);
 
-app.use("/play", express.static("client"));
+app.use("/play", express.static(path.join(__dirname, "..", "client")));
 // app.get("/", function (req, res) {
 //   res.sendfile(path.join("../client/index.html"));
 
